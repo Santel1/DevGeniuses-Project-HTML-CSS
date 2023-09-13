@@ -5,21 +5,99 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
 
+@import url('./hero-1.css');
+@import url('./hero-2.css');
+@import url('./how-it-works.css');
+@import url('./organic-fruits-gallery.css');
+@import url('./contacts.css');
+@import url('./footer.css');
+@import url('./mobile-menu.css');
+@import url('./modal-window_Your-order.css');
+@import url('./modal-window_Thank-You.css');
+@import url('./fresh-harvest-box.css');
+
+
+
+
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  /*Text*/
+  --basic-text-colr: #FFFFFF;
+  --secondary-text-color: #AE1332;
+  --third-text-color: #000000;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  /*Background-color*/
+  --basic-bg-color: #AE1332;
+  --secindery-bg-color: #FFFFFF;
+  --third-bg-color: #000000;
+  --fourth-bg-color: #A4CB66;
+  --five-bg-color: #F5CE13;
+
+  /*Animations*/
+  --transition-duration-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--basic-text-colr);
+}
+
+main {
+  background-color: var(--basic-bg-color);
+
+}
+
+/* Container styles */
+@media only screen and (min-width: 375px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Animation*/
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
