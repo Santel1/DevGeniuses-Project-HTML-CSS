@@ -2,84 +2,854 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/DevGeniuses-Project-HTML-CSS/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Fresh Harvest Box</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     
-    <script type="module" crossorigin src="/DevGeniuses-Project-HTML-CSS/assets/index-c45ada6b.js"></script>
-    <link rel="stylesheet" href="/DevGeniuses-Project-HTML-CSS/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/DevGeniuses-Project-HTML-CSS/assets/index-5bd50f4c.js"></script>
+    <link rel="stylesheet" href="/DevGeniuses-Project-HTML-CSS/assets/index-3e1f99bf.css">
   </head>
+
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/DevGeniuses-Project-HTML-CSS/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <header>
+      <header class="page-header container go-top">
+  <div class="header-container">
+    <nav class="page-nav">
+      <ul class="menu list">
+        <li class="menu-item">
+          <a href="" class="menu-link link">How It Works</a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="menu-item"><a href="" class="menu-link link">Fruits</a></li>
+        <li class="menu-item">
+          <a href="" class="menu-link link">Contacts</a>
         </li>
       </ul>
-    </div>
+    </nav>
+    <a href="" class="logo">
+      <svg class="logo-icon" width="16" height="16">
+        <use href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg#logo-header"></use>
+      </svg>
+      <span class="logo-text">fresh harvest box</span>
+    </a>
+    <a href="" class="header-basket">
+      <svg class="basket-icon" width="28" height="28">
+        <use href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg#basket-header"></use>
+      </svg>
+    </a>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
+    <button type="button" class="mobile-menu-open btn" data-menu-open>
+      <svg class="mobile-menu-open_icon" width="24" height="14">
+        <use href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero container">
+          <!-- Hero-1 -->
+<h1 class="hero-title">
+  fresh harvest box <br />
+  is your one-stop place for a delicious fruit basket
+</h1>
+<div class="image-wrapper">
+  <picture>
+    <!-- Tablet + Desktop screen -->
+    <source
+      media="(min-width: 768px)"
+      srcset="/DevGeniuses-Project-HTML-CSS/assets/woman@tab1x-0a7aaf46.png 1x, /DevGeniuses-Project-HTML-CSS/assets/woman@tab2x-c9392ad2.png 2x"
+      type="image/png"
+    />
+    <!-- Phone screen -->
+    <source
+      media="(max-width: 767px)"
+      srcset="/DevGeniuses-Project-HTML-CSS/assets/woman-33cbb2c4.png 1x, /DevGeniuses-Project-HTML-CSS/assets/woman@mob2x-7ebd4ec3.png 2x"
+      type="image/png"
+    />
+    <img src="/DevGeniuses-Project-HTML-CSS/assets/woman-33cbb2c4.png" alt="smiling girl" class="hero-woman" />
+  </picture>
+  <a href="#organic-fruits-section">
+    <button type="button" class="hero-btn">shop now</button>
+  </a>
+</div>
+
+          <!-- Hero-2 -->
+
+<div class="container-box-wrapper">
+  <div class="container-box">
+    <p class="hero-text">
+      Our expertly curated fruit baskets are made with the freshest, highest
+      quality fruits available. Whether you are looking for a healthy snack or a
+      gift for a loved one, Fresh Harvest Box has got you covered.
+    </p>
+    <div class="fruit-item box-green">
+      <h2 class="fruit-title">Fruit</h2>
       <img
-        class="pic"
-        src="/DevGeniuses-Project-HTML-CSS/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
+        class="fruit-hero-img"
+        srcset="/DevGeniuses-Project-HTML-CSS/assets/watermelon_1x-58367e09.png , /DevGeniuses-Project-HTML-CSS/assets/watermelon_2x-4bc676d3.png "
+        src="/DevGeniuses-Project-HTML-CSS/assets/watermelon_1x-58367e09.png"
+        alt="Watermelon"
+        width="200"
+        height="172"
       />
+      <p class="fruit-text">
+        Refreshing and juicy, watermelon is the perfect summer treat and a great
+        source of hydration
+      </p>
+    </div>
+  </div>
+
+  <div class="container-box-right">
+    <ul class="hashtags-list">
+      <li class="hashtags-item">
+        <h3 class="hashtag-title">&#35;organic</h3>
+      </li>
+      <li class="hashtags-item">
+        <h3 class="hashtag-title">&#35;products</h3>
+      </li>
+      <li class="hashtags-item">
+        <h3 class="hashtag-title">&#35;basket</h3>
+      </li>
+      <li class="hashtags-item">
+        <h3 class="hashtag-title">&#35;fruits</h3>
+      </li>
+    </ul>
+
+    <div class="fruit-item box-yelow">
+      <h2 class="fruit-title">Fruit</h2>
+      <img
+        class="fruit-hero-img"
+        srcset="/DevGeniuses-Project-HTML-CSS/assets/strawberry-basket_1x-39b78031.png , /DevGeniuses-Project-HTML-CSS/assets/strawberry-basket_2x-cb4ed01e.png "
+        src="/DevGeniuses-Project-HTML-CSS/assets/strawberry-basket_1x-39b78031.png"
+        alt="Strawberry basket"
+        width="230"
+        height="186"
+      />
+      <p class="fruit-text">
+        Sweet and juicy, strawberries are packed with vitamin C and
+        antioxidants, making them a delicious and healthy snack
+      </p>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </section>
+      <section class="steps">
+  <h3 class="steps-header">
+    To order your fruit basket, simply follow these easy steps
+  </h3>
+  <p class="steps-text">
+    Our baskets are assembled with care and delivered straight to your doorstep,
+    so you can enjoy the taste of fresh fruit without ever leaving your home.
+    Whether you're looking for a healthy snack or a thoughtful gift, our fruit
+    baskets are the perfect choice.
+  </p>
+  <ul class="steps-list" id="steps-list">
+    <li class="steps-item">
+      <div class="steps-card-container">
+        <div class="steps-container steps-first-container">First Step</div>
+        <p class="steps-card-text">
+          Just choose the fruit you want to order by clicking on the checkboxes
+          next to it.
+        </p>
+      </div>
+    </li>
+    <li class="steps-item">
+      <div class="steps-card-container">
+        <div class="steps-container steps-second-container">Second Step</div>
+        <p class="steps-card-text">
+          Click on the basket and fill out the form.
+        </p>
+      </div>
+    </li>
+    <li class="steps-item">
+      <div class="steps-card-container">
+        <div class="steps-container steps-third-container">Third Step</div>
+        <p class="steps-card-text">
+          Sit back and relax! Your fresh fruit basket will be delivered.
+        </p>
+      </div>
+    </li>
+  </ul>
+  <div class="steps-image-container">
+    <img
+      class="steps-image"
+      src="/DevGeniuses-Project-HTML-CSS/assets/fresh-harvest-box-564d0096.gif"
+      alt="Different fruits"
+    />
+  </div>
+</section>
+
+      <section id="organic-fruits-section">
+  <div class="container">
+    <h2 class="title-organic-fruits">ORGANIC FRUITS</h2>
+    <p class="subtitle-organic-fruits">
+      Our organic fruits are hand-picked from local farms and delivered straight
+      to your doorstep, ensuring that you get the freshest and most nutritious
+      produce possible. We offer a wide selection of organic fruits grown
+      without the use of harmful pesticides or chemicals.
+    </p>
+
+    <ul class="list-organic-fruits">
+      <li
+        class="item-organic-fruits"
+        data-aos="zoom-in"
+        data-aos-easing="cubic-bezier"
+        data-aos-duration="2500"
+      >
+        <div class="text-container-fruits">
+          <h4 class="name-fruits">Strawberry</h4>
+          <p class="class-fruits">Plant</p>
+        </div>
+        <div class="container-container-image-fruits">
+          <img
+            class="image-fruits"
+            srcset="/DevGeniuses-Project-HTML-CSS/assets/strawberry-@1x-9bf20220.png 1x, /DevGeniuses-Project-HTML-CSS/assets/strawberry@2x-53d7d40b.png 2x"
+            scr="./img/organic-fruits/strawberry-@1x.png"
+            alt="Strawberry"
+            width="295"
+            height="251"
+          />
+        </div>
+        <div class="price-container-fruits">
+          <a href="#order" class="price-fruits">100 UAH&nbsp;/&nbsp;kg</a>
+        </div>
+      </li>
+      <!--  -->
+      <li
+        class="item-organic-fruits color-card-fruits-2"
+        data-aos="zoom-in"
+        data-aos-easing="cubic-bezier"
+        data-aos-duration="2500"
+      >
+        <div class="text-container-fruits">
+          <h4 class="name-fruits">Banana</h4>
+          <p class="class-fruits">Plant</p>
+        </div>
+        <div class="container-image-fruits">
+          <img
+            class="image-fruits"
+            srcset="/DevGeniuses-Project-HTML-CSS/assets/banana-@1x-01a8456d.png 1x, /DevGeniuses-Project-HTML-CSS/assets/banana-@2x-bf761d2b.png 2x"
+            scr="./img/organic-fruits/banana-@1x.png"
+            alt="Banana"
+            width="295"
+            height="251"
+          />
+        </div>
+        <div class="price-container-fruits">
+          <a href="#order" class="price-fruits">80 UAH&nbsp;/&nbsp;kg</a>
+        </div>
+      </li>
+      <!--  -->
+      <li
+        class="item-organic-fruits color-card-fruits-3"
+        data-aos="zoom-in"
+        data-aos-easing="cubic-bezier"
+        data-aos-duration="2500"
+      >
+        <div class="text-container-fruits">
+          <h4 class="name-fruits">Watermelon</h4>
+          <p class="class-fruits">Plant</p>
+        </div>
+        <div class="container-image-fruits">
+          <img
+            class="image-fruits"
+            srcset="/DevGeniuses-Project-HTML-CSS/assets/watermelon-@1x-0b1169e5.png 1x, /DevGeniuses-Project-HTML-CSS/assets/watermelon-@2x-8640ab4f.png 2x"
+            scr="./img/organic-fruits/watermelon-@1x.png"
+            alt="Watermelon"
+            width="295"
+            height="251"
+          />
+        </div>
+        <div class="price-container-fruits">
+          <a href="#order" class="price-fruits">40 UAH&nbsp;/&nbsp;kg</a>
+        </div>
+      </li>
+      <!--  -->
+      <li
+        class="item-organic-fruits color-card-fruits-4"
+        data-aos="zoom-in"
+        data-aos-easing="cubic-bezier"
+        data-aos-duration="2500"
+      >
+        <div class="text-container-fruits">
+          <h4 class="name-fruits">Lime</h4>
+          <p class="class-fruits">Plant</p>
+        </div>
+        <div class="container-image-fruits">
+          <img
+            class="image-fruits"
+            srcset="/DevGeniuses-Project-HTML-CSS/assets/lime-@1x-81edc348.png 1x, /DevGeniuses-Project-HTML-CSS/assets/lime-@2x-93e2882d.png 2x"
+            scr="./img/organic-fruits/lime-@1x.png"
+            alt="Lime"
+            width="295"
+            height="251"
+          />
+        </div>
+        <div class="price-container-fruits">
+          <a href="#order" class="price-fruits">60 UAH&nbsp;/&nbsp;kg</a>
+        </div>
+      </li>
+      <!--  -->
+      <li
+        class="item-organic-fruits color-card-fruits-5"
+        data-aos="zoom-in"
+        data-aos-easing="cubic-bezier"
+        data-aos-duration="2500"
+      >
+        <div class="text-container-fruits">
+          <h4 class="name-fruits">Apple</h4>
+          <p class="class-fruits">Plant</p>
+        </div>
+        <div class="container-image-fruits">
+          <img
+            class="image-fruits"
+            srcset="/DevGeniuses-Project-HTML-CSS/assets/apple-@1x-6b8e23bc.png 1x, /DevGeniuses-Project-HTML-CSS/assets/apple-@2x-78195ee1.png 2x"
+            scr="./img/organic-fruits/apple-@1x.png"
+            alt="Apple"
+            width="295"
+            height="251"
+          />
+        </div>
+        <div class="price-container-fruits">
+          <a href="#order" class="price-fruits">50 UAH&nbsp;/&nbsp;kg</a>
+        </div>
+      </li>
+      <!--  -->
+      <li
+        class="item-organic-fruits color-card-fruits-6"
+        data-aos="zoom-in"
+        data-aos-easing="cubic-bezier"
+        data-aos-duration="2500"
+      >
+        <div class="text-container-fruits">
+          <h4 class="name-fruits">Peach</h4>
+          <p class="class-fruits">Plant</p>
+        </div>
+        <div class="container-image-fruits">
+          <img
+            class="image-fruits"
+            srcset="/DevGeniuses-Project-HTML-CSS/assets/peach-@1x-f7b42483.png 1x, /DevGeniuses-Project-HTML-CSS/assets/peach-@2x-17eeabca.png 2x"
+            scr="./img/organic-fruits/peach-@1x.png"
+            alt="Peach"
+            width="295"
+            height="251"
+          />
+        </div>
+        <div class="price-container-fruits">
+          <a href="#order" class="price-fruits">80 UAH&nbsp;/&nbsp;kg</a>
+        </div>
+      </li>
+      <!--  -->
+      <li
+        class="item-organic-fruits color-card-fruits-7"
+        data-aos="zoom-in"
+        data-aos-easing="cubic-bezier"
+        data-aos-duration="2500"
+      >
+        <div class="text-container-fruits">
+          <h4 class="name-fruits">Plums</h4>
+          <p class="class-fruits">Plant</p>
+        </div>
+        <div class="container-image-fruits">
+          <img
+            class="image-fruits"
+            srcset="/DevGeniuses-Project-HTML-CSS/assets/plums-@1x-fea7b7c4.png 1x, /DevGeniuses-Project-HTML-CSS/assets/plums-@2x-e358c2ff.png 2x"
+            scr="./img/organic-fruits/plums-@1x.png"
+            alt="Plums"
+            width="295"
+            height="251"
+          />
+        </div>
+        <div class="price-container-fruits">
+          <a href="#order" class="price-fruits">40 UAH&nbsp;/&nbsp;kg</a>
+        </div>
+      </li>
+      <!--  -->
+      <li
+        class="item-organic-fruits color-card-fruits-8"
+        data-aos="zoom-in"
+        data-aos-easing="cubic-bezier"
+        data-aos-duration="2500"
+      >
+        <div class="text-container-fruits">
+          <h4 class="name-fruits">Orange</h4>
+          <p class="class-fruits">Plant</p>
+        </div>
+        <div class="container-image-fruits">
+          <img
+            class="image-fruits"
+            srcset="/DevGeniuses-Project-HTML-CSS/assets/orange-@1x-77be7cef.png 1x, /DevGeniuses-Project-HTML-CSS/assets/orange-@2x-5060a232.png 2x"
+            scr="./img/organic-fruits/orange-@1x.png"
+            alt="Orange"
+            width="295"
+            height="251"
+          />
+        </div>
+        <div class="price-container-fruits">
+          <a href="#order" class="price-fruits">60 UAH&nbsp;/&nbsp;kg</a>
+        </div>
+      </li>
+      <!--  -->
+      <li
+        class="item-organic-fruits color-card-fruits-9"
+        data-aos="zoom-in"
+        data-aos-easing="cubic-bezier"
+        data-aos-duration="2500"
+      >
+        <div class="text-container-fruits">
+          <h4 class="name-fruits">Kiwi</h4>
+          <p class="class-fruits">Plant</p>
+        </div>
+        <div class="container-container-image-fruits">
+          <img
+            class="image-fruits"
+            class="container-image-fruits"
+            srcset="/DevGeniuses-Project-HTML-CSS/assets/kiwi-@1x-bc201bdb.png 1x, /DevGeniuses-Project-HTML-CSS/assets/kiwi-@2x-a2b9daa6.png 2x"
+            scr="./img/organic-fruits/kiwi-@1x.png"
+            alt="Kiwi"
+            width="295"
+            height="251"
+          />
+        </div>
+        <div class="price-container-fruits">
+          <a href="#order" class="price-fruits">90 UAH&nbsp;/&nbsp;kg</a>
+        </div>
+      </li>
+    </ul>
+    <div class="btn-fruits">
+      <button
+        id="order"
+        class="order-btn-fruits js-open-modal"
+        type="button"
+        data-modal="1"
+      >
+        <svg class="icon-fruits-btn" width="14" height="14">
+          <use href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg#icon-arrow"></use>
+        </svg>
+        ORDER
+      </button>
     </div>
   </div>
 </section>
 
+      
+      <!-- Fresh harvest box $ input -->
+<section class="fresh-harvest-section">
+  <div
+    class="fresh-harvest-box"
+    data-aos="zoom-in"
+    data-aos-easing="cubic-bezier"
+    data-aos-duration="2500"
+  >
+    <h1 class="harvest-box-title">Fresh Harvest Box has got you covered</h1>
+    <div class="harvest-img-box">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="/DevGeniuses-Project-HTML-CSS/assets/fruit@1-da7b4709.jpg 1x, /DevGeniuses-Project-HTML-CSS/assets/fruit@2-0191219f.jpg 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/DevGeniuses-Project-HTML-CSS/assets/tab-fruit@1-468073df.jpg 1x, /DevGeniuses-Project-HTML-CSS/assets/tab-fruit@2-b81402e5.jpg 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/DevGeniuses-Project-HTML-CSS/assets/mob@1x-a5b40a33.jpg 1x, /DevGeniuses-Project-HTML-CSS/assets/mobile@2x-4c7037e0.jpg 2x"
+        />
+
+        <img
+          class="fruit-img"
+          loading="lazy"
+          src="/DevGeniuses-Project-HTML-CSS/assets/fruit@1-da7b4709.jpg"
+          alt="Fruit"
+          width="792"
+          height="502"
+        />
+      </picture>
+
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="/DevGeniuses-Project-HTML-CSS/assets/berries@1-7bcd73b2.jpg 1x, /DevGeniuses-Project-HTML-CSS/assets/berries@2-7cf88dec.jpg 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/DevGeniuses-Project-HTML-CSS/assets/tab-berries@1-93e9968b.jpg 1x, /DevGeniuses-Project-HTML-CSS/assets/tab-berries@2-f4cf5843.jpg 2x"
+        />
+
+        <img
+          class="berries-img"
+          loading="lazy"
+          src="/DevGeniuses-Project-HTML-CSS/assets/berries@1-7bcd73b2.jpg"
+          alt="Berries"
+          width="400"
+          height="502"
+        />
+      </picture>
+    </div>
+  </div>
+  <div class="send-input-box">
+    <p class="send-input-title">
+      Our boxes are packed with delicious, nutritious fruits and vegetables,
+      perfect for anyone looking to eat healthier or support local farmers.
+      Order your box today and start enjoying the best that nature has to offer!
+    </p>
+    <form class="input-box thank-form">
+      <input
+        class="send-input feedback-email"
+        type="email"
+        name="email"
+        placeholder="Enter email..."
+        required
+        autocomplete="none"
+        minlength="3"
+      />
+      <button class="send-button" type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+  <ul class="footer-box">
+    <li class="footer-box-first">
+      <ul class="footer-logo-list list">
+        <li class="footer-logo">
+          <picture>
+            <source
+              media="(min-width: 1158px)"
+              srcset="/DevGeniuses-Project-HTML-CSS/assets/img-desktop-fb67904d.jpg 1x, /DevGeniuses-Project-HTML-CSS/assets/img-desktop@2x-af622c7c.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/DevGeniuses-Project-HTML-CSS/assets/img-desktop-fb67904d.jpg 1x, /DevGeniuses-Project-HTML-CSS/assets/img-desktop@2x-af622c7c.jpg 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/DevGeniuses-Project-HTML-CSS/assets/img-mobile-71c7e98f.jpg 1x, /DevGeniuses-Project-HTML-CSS/assets/img-mobile@2x-4ba4c682.jpg 2x"
+            />
+            <img
+              class="footer-logo-img"
+              src="./images/footer/img-desktop.jpg"
+              alt="Smiling girl with bananas"
+              width="349"
+              height="179"
+            />
+          </picture>
+        </li>
+        <li class="footer-logo">
+          <a class="footer-logo-link link" href="./index.html">
+            <svg class="footer-logo-icon" width="16" height="16">
+              <use href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg#logo-header"></use>
+            </svg>
+            <span class="footer-logo-text"> fresh harvest box</span>
+          </a>
+        </li>
+      </ul>
+      <nav class="footer-nav-menu">
+        <ul class="footer-menu-list list">
+          <li class="footer-menu-item">
+            <a class="footer-menu-link link" href="">How It Works</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link link" href="">Fruits</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </li>
+    <li class="footer-box-second">
+      <div class="footer-social-media">
+        <ul class="footer-social-media-list list" id="contacts">
+          <li class="footer-social-media-item hvr-grow">
+            <a
+              class="footer-social-media-link link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener norefferrer"
+            >
+              <svg class="footer-social-media-icon">
+                <use href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-media-item hvr-grow">
+            <a
+              class="footer-social-media-link link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener norefferrer"
+            >
+              <svg class="footer-social-media-icon">
+                <use href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-media-item hvr-grow">
+            <a
+              class="footer-social-media-link link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener norefferrer"
+            >
+              <svg class="footer-social-media-icon">
+                <use href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <address class="footer-contacts">
+        <ul class="footer-contacts-list list">
+          <li class="footer-contacts-item">
+            <a class="footer-contacts-phone-link link" href="tel:+380684439426">
+              +380 (68) 443-94-26
+            </a>
+          </li>
+          <li class="footer-contacts-item">
+            <a
+              class="footer-contacts-map-link link"
+              href="https://goo.gl/maps/BzKwkpX44fDVytxx9"
+              target="_blank"
+              rel="noopener norefferrer"
+            >
+              1678 S. Pioneer Road Salt Lake City UT 84104
+            </a>
+          </li>
+        </ul>
+      </address>
+    </li>
+  </ul>
+</div>
+
+    </footer>
+    <div class="mobile-menu" data-menu>
+  <div class="header-mobile-menu">
+    <a href="" class="logo-mobile">
+      <svg class="logo-icon" width="16" height="16">
+        <use href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg#logo-header"></use>
+      </svg>
+
+      <span class="logo-text-mobile">fresh harvest box </span>
+    </a>
+
+    <button class="mobile-menu_close-btn" data-menu-close>
+      <svg class="mobile-menu_close-icon" width="24" height="24">
+        <use href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg#icon-clos"></use>
+      </svg>
+    </button>
+  </div>
+
+  <ul class="mobile-nav-list">
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link link" href="#steps-list">How it works</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link link" href="#organic-fruits-section">
+        Fruits
+      </a>
+    </li>
+
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link link" href="#contacts"> Contacts </a>
+    </li>
+
+    <li class="mobile-menu-item">
+      <a href="" class="mobile-menu-link link">
+        <svg class="mobile-basket-icon" width="28" height="28">
+          <use href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg#basket-mob"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
 
     
+
+
+<div class="modal-window modal" data-modal="1">
+    <h2 class="order-title">YOU ORDER</h2>
+    <button class="close-wind js-modal-close" type="button">
+        <svg class="close" width="24" height="24">
+            <use href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg#icon-clos"></use>
+        </svg>
+    </button>
+    <form class="modal-form">
+        <ul class="cart-colection">
+            <li class="order-cart">
+                <label class="order-box">
+                    <div class="title-section">
+                        <h3 class="cart-title">Strawberry Basket</h3>
+                        <p class="categori">Plant</p>
+                    </div>
+                    <picture class="img-container">
+                        <source
+                            srcset="/DevGeniuses-Project-HTML-CSS/assets/kisspng-strawberry1-241e2d11.png 1x, /DevGeniuses-Project-HTML-CSS/assets/kisspng-strawberry1@2x-515989a5.png 2x"
+                            media="(max-width: 325px)" sizes="(width: 88px) 88px, 100vw">
+                        <source
+                            srcset="/DevGeniuses-Project-HTML-CSS/assets/kisspng-strawberry1768-0eb8cc48.png 1x, /DevGeniuses-Project-HTML-CSS/assets/kisspng-strawberry1@2x768-344f9af3.png 2x"
+                            media="(max-width: 1279px)" sizes="(width: 133px) 133px, 100vw">
+                        <source
+                            srcset="/DevGeniuses-Project-HTML-CSS/assets/kisspng-strawberry11200-19974a1b.png 1x, /DevGeniuses-Project-HTML-CSS/assets/kisspng-strawberry1@2x1200-04631f96.png 2x"
+                            media="(min-width: 1280px)" sizes="(width: 173px) 173px, 100vw">
+                        <img src="/DevGeniuses-Project-HTML-CSS/assets/kisspng-strawberry1-241e2d11.png" alt="Strawberry">
+                    </picture>
+                    <input class="cart-checkbox" type="checkbox">
+                </label>
+            </li>
+            <li class="order-cart">
+                <label class="order-box">
+
+                    <div class="title-section">
+                        <h3 class="cart-title">Apple Basket</h3>
+                        <p class="categori">Plant</p>
+                    </div>
+                    <picture class="img-container">
+                        <source
+                            srcset="./img/your-order-pop-up/unsplash_zeFy-oCUhV8.png 1x, ./img/your-order-pop-up/unsplash_zeFy-oCUhV8.png@2x 2x"
+                            media="(max-width: 325px)" sizes="(width: 107px) 107px, 100vw">
+                        <source
+                            srcset="/DevGeniuses-Project-HTML-CSS/assets/unsplash_zeFy-oCUhV8768-c0746c4e.png 1x, /DevGeniuses-Project-HTML-CSS/assets/unsplash_zeFy-oCUhV8@2x768-f7a8f5aa.png 2x"
+                            media="(max-width: 1279px)" sizes="(width: 172px) 172px, 100vw">
+                        <source
+                            srcset="/DevGeniuses-Project-HTML-CSS/assets/unsplash_zeFy-oCUhV81200-dc723ce1.png 1x, /DevGeniuses-Project-HTML-CSS/assets/unsplash_zeFy-oCUhV8@2x1200-dfb9e6b9.png 2x"
+                            media="(min-width: 1280px)" sizes="(width: 229px) 229px, 100vw">
+                        <img src="/DevGeniuses-Project-HTML-CSS/assets/unsplash_zeFy-oCUhV8-5779082a.png" alt="Strawberry">
+                    </picture>
+                    <input class="cart-checkbox" type="checkbox">
+                </label>
+            </li>
+            <li class="order-cart">
+                <label class="order-box">
+
+                    <div class="title-section">
+                        <h3 class="cart-title">Fruits Basket</h3>
+                        <p class="categori">Plant</p>
+                    </div>
+                    <picture class="img-container">
+                        <source
+                            srcset="/DevGeniuses-Project-HTML-CSS/assets/IMG_9757_1-40442617.png 1x, /DevGeniuses-Project-HTML-CSS/assets/IMG_9757_1@2x-392ebd00.png 2x"
+                            media="(max-width: 325px)" sizes="(width: 107px) 107px, 100vw">
+                        <source
+                            srcset="/DevGeniuses-Project-HTML-CSS/assets/IMG_9757_1768-f6553f76.png 1x, /DevGeniuses-Project-HTML-CSS/assets/IMG_9757_1@2x768-2eadedf9.png 2x"
+                            media="(max-width: 1279px)" sizes="(width: 172px) 172px, 100vw">
+                        <source
+                            srcset="/DevGeniuses-Project-HTML-CSS/assets/IMG_9757_11200-0af23015.png 1x, /DevGeniuses-Project-HTML-CSS/assets/IMG_9757_1@2x1200-73edc912.png 2x"
+                            media="(min-width: 1280px)" sizes="(width: 229px) 229px, 100vw">
+                        <img src="/DevGeniuses-Project-HTML-CSS/assets/IMG_9757_1-40442617.png" alt="Strawberry">
+                    </picture>
+                    <input class="cart-checkbox" type="checkbox">
+                </label>
+            </li>
+        </ul>
+        <div class="order-form">
+            <lable class="data-lable" for:="Full-name">
+                <input type="text" class="data-input" name="Full-name" placeholder="&nbsp;">
+                <span class="input-text-inform">Enter full name...</span>
+            </lable>
+            <lable class="data-lable" for:="mail">
+                <input type="email" class="data-input" name="mail" placeholder="&nbsp;">
+                <span class="input-text-inform">Enter email...</span>
+            </lable>
+            <lable class="data-lable" for:="card">
+                <input type="text" class="data-input" name="card" maxlength="16" pattern="[0-9]{16}"
+                    placeholder="&nbsp;">
+                <span class="input-text-inform">Enter card..</span>
+            </lable>
+            <lable class="data-lable" for:="Comment">
+                <textarea class="data-input-comment" name="Comment" rows="4" placeholder="&nbsp;"></textarea>
+                <span class="input-text-inform in-textarea">Enter comments...</span>
+            </lable>
+
+            <button class="order-button" type="submit">Submit</button>
+        </div>
+        <picture class="background-img">
+            <source srcset="/DevGeniuses-Project-HTML-CSS/assets/IMG_9760_290-564d5b79.png 1x, /DevGeniuses-Project-HTML-CSS/assets/IMG_9760_580-60e32fb9.png 2x"
+                media="(max-width: 1280px)" sizes="(min-width: 480px) 480px, 100vw">
+            <source srcset="/DevGeniuses-Project-HTML-CSS/assets/IMG_9760_471-8f0f0908.png 1x, /DevGeniuses-Project-HTML-CSS/assets/IMG_9760_942-922e73ab.png 2x"
+                media="(min-width: 1280px)" sizes="(min-width: 480px) 480px, 100vw">
+            <img src="/DevGeniuses-Project-HTML-CSS/assets/IMG_9760_290-564d5b79.png" alt="women and Fresh Fruits">
+        </picture>
+    </form>
+
+</div>
+
+
+    <div class="modal_window_content modal-thank-you">
+  <button class="modal_close-btn close-btn" type="button">
+    <svg class="modal_close-icon" width="28" height="28">
+      <use class="" href="/DevGeniuses-Project-HTML-CSS/assets/icon-7f8b9abf.svg#icon-clos"></use>
+    </svg>
+  </button>
+
+  <picture class="modal_image">
+    <sourse
+      srcset="
+        ./img/thank-you-pop-up/STRAWBERRY.png    1x,
+        ./img/thank-you-pop-up/STRAWBERRY@2x.png 2x
+      "
+      media="(min-width:1280px)"
+      sizes="(width: 278px) 278px, 100vw"
+    />
+
+    <sourse
+      srcset="
+      ./img/thank-you-pop-up/STRAWBERRY.png    1x,
+      ./img/thank-you-pop-up/STRAWBERRY@2x.png 2x
+      "
+      media="(min-width:768px)"
+      sizes="(width: 278px) 278px, 100vw"
+    />
+
+    <sourse
+      srcset="
+      ./img/thank-you-pop-up/STRAWBERRY.mob.png    1x,
+      ./img/thank-you-pop-up/STRAWBERRY.mob@2x.png 2x
+      "
+      media="(min-width:375px)"
+      sizes="(width: 207px) 207px, 100vw"
+    />
+    <img src="/DevGeniuses-Project-HTML-CSS/assets/strawberry-6ce3d587.png" alt="Strawberry" />
+  </picture>
+
+  <div class="modal_text">
+    <h2 class="modal_title">THANK YOU</h2>
+    <p class="modal_subtitle">
+      Thank you for your order! Our team is preparing your box with fresh,
+      delicious fruits and vegetables, and we'll deliver it straight to your
+      doorstep. We appreciate your business and look forward to providing you
+      with the best possible experience!
+    </p>
+  </div>
+</div>
+
+
+    <div class="backdrop js-overlay-modal overlay"></div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
